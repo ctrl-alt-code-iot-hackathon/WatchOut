@@ -310,7 +310,7 @@ class VideoStream extends React.Component {
         <ul style={{background: this.state.color}} className="text">
           {this.state.text}
         </ul>
-        <img className="screenshot" width="600" alt="" src={this.state.image}/>
+        
         <video
           className="size"
           autoPlay
@@ -320,12 +320,14 @@ class VideoStream extends React.Component {
           width="600"
           height="500"
         />
+        <img className="screenshot" width="600" alt="" src={this.state.image}/>
         <canvas
           className="size"
           ref={this.canvasRef}
           width="600"
           height="500"
         />
+        
         <Webcam
           audio={false}
           height={0}
